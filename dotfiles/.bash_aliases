@@ -59,6 +59,7 @@ alias ....="cd ../../.."
 
 # Paths
 alias aaGoDocker="cd $ZZ_SYNC_DIR/docker"
+alias aaGoStudy="cd $ZZ_SYNC_DIR/study"
 alias aaGoScripts="cd $ZZ_SCRIPTS_DIR"
 alias aaGoSync="cd $ZZ_SYNC_DIR"
 

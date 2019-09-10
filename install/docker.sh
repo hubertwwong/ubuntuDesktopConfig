@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "> Install > Docker CE"
-sudot apt install -y curl
+sudo apt install -y curl
 sudo apt-get install -y \
   apt-transport-https \
   ca-certificates \
@@ -14,3 +14,11 @@ sudo add-apt-repository \
    stable"
 sudo apt-get update
 sudo apt-get install -y docker-ce docker-ce-cli containerd.io
+sudo systemctl start docker
+sudo systemctl enable docker
+echo "> Install > Docker Compose. WARNING VERSION IS HARD CODED."
+sudo curl -L "https://github.com/docker/compose/releases/download/1.24.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+echo "> Adding user to docker group. This is so you don't have to use sudo docker"
+sudo usermod -aG docker ${USER}
+su - ${USER}
