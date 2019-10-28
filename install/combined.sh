@@ -22,9 +22,11 @@ if [ -z "$INSTALLDIR" ]; then
 fi
 
 source $INSTALLDIR/install/first.sh
-source $INSTALLDIR/install/bashConfig.sh
 source $INSTALLDIR/install/git.sh
 source $INSTALLDIR/install/node.sh
 source $INSTALLDIR/install/resilio.sh
 source $INSTALLDIR/install/vscode.sh
 source $INSTALLDIR/install/chrome.sh
+source $INSTALLDIR/install/docker.sh
+# Do this last because of source
+source $INSTALLDIR/install/bashConfig.sh

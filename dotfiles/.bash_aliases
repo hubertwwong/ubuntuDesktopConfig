@@ -74,6 +74,11 @@ alias aaUpgradeSys="sudo apt-get -y update;sudo apt-get -y upgrade;sudo apt-get 
 # Init this file.
 # alias aaUpdateBash="cp $ZZ_SCRIPTS_DIR/.bash_aliases ~/;source .bashrc"
 
+# Git
+alias ggi="git init"
+alias gga="git add ."
+alias ggc="git commit -m "
+
 # Install
 #########
 
