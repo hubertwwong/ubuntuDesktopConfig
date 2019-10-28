@@ -28,5 +28,6 @@ source $INSTALLDIR/install/resilio.sh
 source $INSTALLDIR/install/vscode.sh
 source $INSTALLDIR/install/chrome.sh
 source $INSTALLDIR/install/docker.sh
+source $INSTALLDIR/install/apt.sh
 # Do this last because of source
 source $INSTALLDIR/install/bashConfig.sh

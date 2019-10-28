@@ -12,6 +12,10 @@ ZZ_SCRIPTS_DIR="$ZZ_SYNC_DIR/ubuntu/scripts/ubuntuDesktopConfig/dotfiles"
 
 # Other directories.
 
+# Other ENV
+##############################################################################
+export GPODDER_DOWNLOAD_DIR=$ZZ_SYNC_DIR/../podcasts
+
 # Color schemes constants
 ##############################################################################
 
@@ -66,10 +70,10 @@ alias aaGoSync="cd $ZZ_SYNC_DIR"
 # Scripts
 
 # Simple helper reduce typing
-alias aaAptInstall="sudo apt-get -y update;sudo apt-get -y install"
+alias aaAptInstall="sudo apt -y update && sudo apt -y install"
 
 # System update
-alias aaUpgradeSys="sudo apt-get -y update;sudo apt-get -y upgrade;sudo apt-get -y autoremove;sudo apt-get -y autoclean"
+alias aaUpgradeSys="sudo apt -y update && sudo apt -y upgrade && sudo apt -y autoremove && sudo apt -y autoclean"
 
 # Init this file.
 # alias aaUpdateBash="cp $ZZ_SCRIPTS_DIR/.bash_aliases ~/;source .bashrc"
