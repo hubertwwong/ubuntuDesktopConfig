@@ -13,18 +13,19 @@ The following 2 files are deleted and symlink to files in the repo.
 
 ## Install Notes.
 
-Create a directory for this repo
+1. Create a directory for this repo
+2. CD into said directory
 
 Run the following commands.
 ```
 sudo apt -y install git
-git clone https://github.com/hubertwwong/ubuntuDesktopConfig.git
+git clone https://github.com/hubertwwong/ubuntuDesktopConfig.git .
 INSTALLDIR=/full/path/of/this/directory EMAIL="yourEmailForGithub@foo.com" GITNAME="GIT NAME" ./install/combined.sh
 ```
 
 As a single command
 ```
-sudo apt -y install git && git clone https://github.com/hubertwwong/ubuntuDesktopConfig.git && INSTALLDIR=/full/path/of/this/directory EMAIL="yourEmailForGithub@foo.com" GITNAME="GIT NAME" ./install/combined.sh
+sudo apt -y install git && git clone https://github.com/hubertwwong/ubuntuDesktopConfig.git . && INSTALLDIR=/full/path/of/this/directory EMAIL="yourEmailForGithub@foo.com" GITNAME="GIT NAME" ./install/combined.sh
 ```
 
 If you don't want certain pieces of software to install, comment out the line in the `combined.sh` file.
