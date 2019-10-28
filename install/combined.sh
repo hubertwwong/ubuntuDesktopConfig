@@ -31,3 +31,4 @@ source $INSTALLDIR/install/docker.sh
 source $INSTALLDIR/install/apt.sh
 # Do this last because of source
 source $INSTALLDIR/install/bashConfig.sh
+echo "> Install > Install is complete. Please log off and log back on for docker group permissions to setup properly."
