@@ -36,11 +36,10 @@ If you don't want certain pieces of software to install, comment out the line in
 2. Docker CE
 3. NodeJS and NPM. From ubuntu. Not from NVM or anything like that.
 4. Terminal programs (keepass2 git curl vim tmux gnome-online-accounts libavcodec-extra software-properties-common)
-5. Resilio Sync (Use to sync directories accross computers)
+5. Resilio Sync (Use to sync directories accross computers) You still need to accept instructions.
 6. Google Chrome.
 
 ## TODO
 
-1. Fix the exit 1 closing the terminal.
-2. Have a script to setup resilio sync permissions and directories. Also to start the service. Currently it just install the package.
-3. More testing. There are some ENV variables in the bash_aliases that I want to move out.
+1. Alias assumes certain directories. Probably not the end of the world.
+2. Test the after install script.
