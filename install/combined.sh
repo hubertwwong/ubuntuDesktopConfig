@@ -23,6 +23,7 @@ fi
 
 source $INSTALLDIR/install/first.sh
 source $INSTALLDIR/install/gnomeLock.sh
+source $INSTALLDIR/install/timezone.sh
 source $INSTALLDIR/install/git.sh
 source $INSTALLDIR/install/node.sh
 source $INSTALLDIR/install/resilio.sh
