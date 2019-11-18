@@ -14,11 +14,14 @@ echo "> resilio > Creating file to pipe into systemctl"
 } > /tmp/resilio.conf
 echo "> resilio > Piping said file into resilio"
 sudo env SYSTEMD_EDITOR="cp /tmp/resilio.conf" systemctl edit resilio-sync.service
-echo "> resilio > Restart the service"
+echo "> resilio > Enable resilio sync service and restart the service"
 sudo systemctl daemon-reload
-sudo systemctl --user restart resilio-sync.service
-sudo systemctl --user enable resilio-sync
+sudo systemctl enable resilio-sync
+sudo systemctl restart resilio-sync
 # 
 # Links
 # https://medium.com/@justlaputa/run-resiliosync-btsync-as-normal-user-under-ubuntu-1498f7701a28
 # https://unix.stackexchange.com/questions/459942/using-systemctl-edit-via-bash-script
+#
+# Notes
+# sudo systemctl --user had a issue. Might be because the user was install for root.
