@@ -50,6 +50,26 @@ CUST2_PROMPT="$RST[$FBLE\u$RST][$FBLE\w$RST][$FBLE\@$RST]\n$ "
 CUST_NONAME_PROMPT="$RST[$FBLE\w$RST][$FBLE\@$RST]\n$ "
 PS1=$CUST2_PROMPT
 
+# Functions
+##############################################################################
+
+## Docker
+## 
+## See this url for docker-ips
+## https://stackoverflow.com/questions/17157721/how-to-get-a-docker-containers-ip-address-from-the-host
+
+# List all containers
+# docker-ips
+docker-ips() {
+    docker inspect --format='{{.Name}} - {{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' $(docker ps -aq)
+}
+
+# List a speicific IP of a docker container
+# docker-ip YOUR_CONTAINER_ID
+docker-ip() {
+  docker inspect --format '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' "$@"
+}
+
 # Aliases
 ##############################################################################
 
