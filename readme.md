@@ -11,6 +11,12 @@ The following 2 files are deleted and symlink to files in the repo.
 .tmux.conf
 ```
 
+## TODO
+
+1. Fix docker issue. Basically docker CE does not keep up with ubuntu releases. If you are on the LTS release, of ubuntu, things should work. If you are on current release, you have to update the /etc/apt/sources.list to back up the release to `disco`. Not a really good solution.
+
+
+
 ## Install Notes.
 
 1. Create a directory for this repo

@@ -125,3 +125,7 @@ alias aaNodeCleanNPM="find . -name "node_modules" -type d -prune -exec rm -rf '{
 # TMUX
 #######
 [[ $TERM != "screen" ]] && exec tmux
+
+# PATH
+######
+export PATH=$PATH:$HOME/.config/composer/vendor/bin
