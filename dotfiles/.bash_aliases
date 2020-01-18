@@ -103,6 +103,9 @@ alias ggi="git init"
 alias gga="git add ."
 alias ggc="git commit -m "
 
+# Misc
+alias aaOwnDir="sudo chown -R $USER:$USER ."
+
 # Install
 #########
 
