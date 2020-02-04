@@ -34,7 +34,6 @@ As a single command
 sudo apt -y install git && git clone https://github.com/hubertwwong/ubuntuDesktopConfig.git . && INSTALLDIR=/full/path/of/this/directory EMAIL="yourEmailForGithub@foo.com" GITNAME="GIT NAME" ./install/combined.sh
 ```
 
-
 ## After install instructions
 
 1. Reboot. There are some groups that get setup that need logout or reboot. Reboot is probably eaiser.
@@ -42,6 +41,12 @@ sudo apt -y install git && git clone https://github.com/hubertwwong/ubuntuDeskto
 
 If you don't want certain pieces of software to install, comment out the line in the `combined.sh` file.
 
+To fix in the future. This contains some refresh bash shell so I don't see an easy way to do this.
+Run this after the reboot.
+
+```
+INSTALLDIR=/full/path/of/this/directory ./install/combined
+```
 
 
 ## NVidia cards issues

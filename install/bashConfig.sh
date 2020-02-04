@@ -11,3 +11,4 @@ ln -s $INSTALLDIR/dotfiles/.bash_aliases ~/.bash_aliases
 rm -f ~/.tmux.conf
 ln -s $INSTALLDIR/dotfiles/.tmux.conf ~/.tmux.conf
 source ~/.bash_aliases
+source ~/.tmux.conf
