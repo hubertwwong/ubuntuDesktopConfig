@@ -48,6 +48,13 @@ Run this after the reboot.
 INSTALLDIR=/full/path/of/this/directory ./install/combined
 ```
 
+## Changing the bash alias dir
+
+CD to whatever directory contains your new directory. Then run:
+```
+INSTALLDIR=/full/path/of/this/directory ./install/bashConfig.sh
+```
+
 
 ## NVidia cards issues
 
