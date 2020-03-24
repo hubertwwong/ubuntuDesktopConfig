@@ -26,12 +26,12 @@ Run the following commands.
 ```
 sudo apt -y install git
 git clone https://github.com/hubertwwong/ubuntuDesktopConfig.git .
-INSTALLDIR=/full/path/of/this/directory EMAIL="yourEmailForGithub@foo.com" GITNAME="GIT NAME" ./install/combined.sh
+INSTALLDIR=/full/path/of/this/directory EMAIL="yourEmailForGithub@foo.com" GITNAME="GIT NAME" SWAP=4 ./install/combined.sh
 ```
 
 As a single command
 ```
-sudo apt -y install git && git clone https://github.com/hubertwwong/ubuntuDesktopConfig.git . && INSTALLDIR=/full/path/of/this/directory EMAIL="yourEmailForGithub@foo.com" GITNAME="GIT NAME" ./install/combined.sh
+sudo apt -y install git && git clone https://github.com/hubertwwong/ubuntuDesktopConfig.git . && INSTALLDIR=/full/path/of/this/directory EMAIL="yourEmailForGithub@foo.com" GITNAME="GIT NAME" SWAP=4 ./install/combined.sh
 ```
 
 ## After install instructions

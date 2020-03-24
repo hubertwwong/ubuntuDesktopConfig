@@ -9,7 +9,12 @@ fi
 if [ -z "$GITNAME" ]; then
     echo "Need to set GITNAME"
     exit 1
-fi  
+fi
+
+if [ -z "$SWAP" ]; then
+    echo "Need to set SIZE for swap size. e.g. SWAP=4 for 4gb"
+    exit 1
+fi
 
 # if [ -z "$USERNAME" ]; then
 #     echo "Need to set USERNAME for resilio sync"
@@ -22,6 +27,9 @@ if [ -z "$INSTALLDIR" ]; then
 fi
 
 source $INSTALLDIR/install/first.sh
+source $INSTALLDIR/install/swap.sh
+source $INSTALLDIR/install/gnomeClock.sh
+source $INSTALLDIR/install/vboxGuest.sh
 source $INSTALLDIR/install/gnomeLock.sh
 source $INSTALLDIR/install/timezone.sh
 source $INSTALLDIR/install/git.sh
