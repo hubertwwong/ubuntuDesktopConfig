@@ -92,8 +92,9 @@ alias aaGoSync="cd $ZZ_SYNC_DIR"
 # Simple helper reduce typing
 alias aaAptInstall="sudo apt -y update && sudo apt -y install"
 
-# System update
-alias aaUpgradeSys="sudo apt -y update && sudo apt -y upgrade && sudo apt -y autoremove && sudo apt -y autoclean && snap refresh"
+# System update.
+# Snaps refresh automatically. don't put it here.
+alias aaUpgradeSys="sudo apt -y update && sudo apt -y upgrade && sudo apt -y autoremove && sudo apt -y autoclean"
 
 # Init this file.
 # alias aaUpdateBash="cp $ZZ_SCRIPTS_DIR/.bash_aliases ~/;source .bashrc"
