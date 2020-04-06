@@ -134,5 +134,5 @@ alias aaSUDONodeCleanNPM="sudo find . -name "node_modules" -type d -prune -exec 
 # PATH
 ######
 export PATH=$PATH:$HOME/.local/bin
-# local/bin is for python php
+# local/bin is for python pip
 
