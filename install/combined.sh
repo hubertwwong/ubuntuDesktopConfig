@@ -34,6 +34,7 @@ source $INSTALLDIR/install/gnomeLock.sh
 source $INSTALLDIR/install/timezone.sh
 source $INSTALLDIR/install/git.sh
 source $INSTALLDIR/install/nvm.sh
+source $INSTALLDIR/install/python.sh
 source $INSTALLDIR/install/resilio.sh
 source $INSTALLDIR/install/vscode.sh
 source $INSTALLDIR/install/chrome.sh
