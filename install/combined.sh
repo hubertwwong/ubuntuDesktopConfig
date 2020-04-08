@@ -29,6 +29,7 @@ fi
 source $INSTALLDIR/install/first.sh
 source $INSTALLDIR/install/swap.sh
 source $INSTALLDIR/install/gnomeClock.sh
+source $INSTALLDIR/install/gnomeAccounts.sh
 source $INSTALLDIR/install/vboxGuest.sh
 source $INSTALLDIR/install/gnomeLock.sh
 source $INSTALLDIR/install/timezone.sh
