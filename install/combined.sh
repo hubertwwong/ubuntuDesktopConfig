@@ -28,6 +28,7 @@ fi
 
 source $INSTALLDIR/install/first.sh
 source $INSTALLDIR/install/swap.sh
+source $INSTALLDIR/install/uninstall.sh
 source $INSTALLDIR/install/gnomeClock.sh
 source $INSTALLDIR/install/gnomeAccounts.sh
 source $INSTALLDIR/install/vboxGuest.sh
