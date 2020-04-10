@@ -2,5 +2,5 @@
 echo "> Install > Basic req"
 sudo apt-add-repository -y ppa:jtaylor/keepass
 sudo apt update
-sudo apt install -y keepass2 git curl vim tmux gnome-online-accounts libavcodec-extra software-properties-common
+sudo apt install -y keepass2 git curl vim tmux gnome-online-accounts libavcodec-extra software-properties-common htop
 sudo snap install code --classic
