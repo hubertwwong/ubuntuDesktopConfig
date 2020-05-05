@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "> install > python 3"
-sudo apt -y install python3 python3-dev python3-venv
+sudo apt -y install python3 python3-dev python3-venv python3-pip
 echo "> install > pipenv. Note you should probably use this over virtual env."
 pip3 install --user pipenv
 # echo "> install > python 3 pip. This is the source version."
