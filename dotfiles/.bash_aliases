@@ -134,6 +134,7 @@ alias aaSUDONodeCleanNPM="sudo find . -name "node_modules" -type d -prune -exec 
 
 # PATH
 ######
-export PATH=$PATH:$HOME/.local/bin
+export PATH=$PATH:$HOME/.local/bin:/usr/local/go/bin
 # local/bin is for python pip
+# /usr/local/go/bin is for golang
 
