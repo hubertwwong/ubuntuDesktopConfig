@@ -42,8 +42,10 @@ RST="\e[m" # RESET
 
 # Display a git branch
 # https://coderwall.com/p/fasnya/add-git-branch-name-to-bash-prompt
+# Note: This is my variant that just has the branch name without the extra paren
+# git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* //'
 parse_git_branch() {
-  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* //'
 }
 
 # Save the default prompt if you want to go back to it.
