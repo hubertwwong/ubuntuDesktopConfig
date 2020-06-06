@@ -142,7 +142,13 @@ alias aaNodeCleanNPM="sudo find . -name "node_modules" -type d -prune -exec rm -
 
 # PATH
 ######
-# export PATH=$PATH:$HOME/.local/bin:/usr/local/go/bin
+export PATH=$PATH:$HOME/.local/bin:/usr/local/go/bin
 # local/bin is for python pip
 # /usr/local/go/bin is for golang
 
+# NVM
+# Note: You probably don't need this but I put this for reference.
+# When you install nvm, it should put these lines in the bashrc file for you.
+#export NVM_DIR="$HOME/.nvm"
+#[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+#[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
