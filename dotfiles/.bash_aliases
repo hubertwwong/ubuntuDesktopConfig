@@ -41,8 +41,9 @@ RST="\e[m" # RESET
 ##############################################################################
 
 # Display a git branch
+# https://coderwall.com/p/fasnya/add-git-branch-name-to-bash-prompt
 parse_git_branch() {
-  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
 
 # Save the default prompt if you want to go back to it.
