@@ -130,13 +130,13 @@ alias aaOwnDir="sudo chown -R $USER:$USER ."
 
 # Node scripts
 ##############
-alias aaNodeCleanNPM="find . -name "node_modules" -type d -prune -exec rm -rf '{}' +"
-alias aaSUDONodeCleanNPM="sudo find . -name "node_modules" -type d -prune -exec rm -rf '{}' +"
+#alias aaNodeCleanNPM="find . -name "node_modules" -type d -prune -exec rm -rf '{}' +"
+alias aaNodeCleanNPM="sudo find . -name "node_modules" -type d -prune -exec rm -rf '{}' +"
 # BE CAREFUL WITH THIS COMMAND
 
 # TMUX
 #######
-[[ $TERM != "screen" ]] && exec tmux
+# [[ $TERM != "screen" ]] && exec tmux
 
 # PATH
 ######
