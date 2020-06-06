@@ -40,13 +40,18 @@ RST="\e[m" # RESET
 # Prompt
 ##############################################################################
 
+# Display a git branch
+parse_git_branch() {
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
 # Save the default prompt if you want to go back to it.
 DEFAULT_PROMPT=$PS1
 alias aaPromptDefault="PS1=$DEFAULT_PROMPT"
 
 # Custom Prompt
 CUST1_PROMPT="[\u][\w][\@]\n$ "
-CUST2_PROMPT="$RST[$FBLE\u$RST][$FBLE\w$RST][$FBLE\@$RST]\n$ "
+CUST2_PROMPT="$RST[$FBLE\u$RST][$FBLE\w$RST][$FBLE\@$RST][$FBLE$parse_git_branch$RST]\n$ "
 CUST_NONAME_PROMPT="$RST[$FBLE\w$RST][$FBLE\@$RST]\n$ "
 PS1=$CUST2_PROMPT
 
@@ -134,7 +139,7 @@ alias aaSUDONodeCleanNPM="sudo find . -name "node_modules" -type d -prune -exec 
 
 # PATH
 ######
-export PATH=$PATH:$HOME/.local/bin:/usr/local/go/bin
+# export PATH=$PATH:$HOME/.local/bin:/usr/local/go/bin
 # local/bin is for python pip
 # /usr/local/go/bin is for golang
 
