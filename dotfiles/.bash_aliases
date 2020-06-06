@@ -51,7 +51,7 @@ alias aaPromptDefault="PS1=$DEFAULT_PROMPT"
 
 # Custom Prompt
 CUST1_PROMPT="[\u][\w][\@]\n$ "
-CUST2_PROMPT="$RST[$FBLE\u$RST][$FBLE\w$RST][$FBLE\@$RST][$FBLE$parse_git_branch$RST]\n$ "
+CUST2_PROMPT="$RST[$FBLE\u$RST][$FBLE\w$RST][$FBLE\@$RST][$FBLE$(parse_git_branch)$RST]\n$ "
 CUST_NONAME_PROMPT="$RST[$FBLE\w$RST][$FBLE\@$RST]\n$ "
 PS1=$CUST2_PROMPT
 
