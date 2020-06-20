@@ -152,3 +152,27 @@ export PATH=$PATH:$HOME/.local/bin:/usr/local/go/bin
 #export NVM_DIR="$HOME/.nvm"
 #[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 #[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Kubernetes aliases. assuming monitoring prometheus as the namespace for now
+# ===========================================================================
+
+# namespace
+KUBE_NAMESPACE=default
+
+# General. 
+alias k="kubectl -n "$KUBE_NAMESPACE
+
+# get
+alias kgp="kubectl get pods -n "$KUBE_NAMESPACE
+alias kgd="kubectl get deployments -n "$KUBE_NAMESPACE
+alias kgs="kubectl get services -n "$KUBE_NAMESPACE
+alias kgc="kubectl get configmaps -n "$KUBE_NAMESPACE
+
+# describe
+alias kdp="kubectl describe pod -n "$KUBE_NAMESPACE
+alias kdd="kubectl describe deployment -n "$KUBE_NAMESPACE
+alias kds="kubectl describe service -n "$KUBE_NAMESPACE
+alias kdc="kubectl describe configmap -n "$KUBE_NAMESPACE
+
+# log
+alias kl="kubectl logs -n "$KUBE_NAMESPACE" --follow"
