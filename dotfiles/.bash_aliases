@@ -172,12 +172,14 @@ alias kgp="kubectl get pods -n "$KUBE_NAMESPACE
 alias kgd="kubectl get deployments -n "$KUBE_NAMESPACE
 alias kgs="kubectl get services -n "$KUBE_NAMESPACE
 alias kgc="kubectl get configmaps -n "$KUBE_NAMESPACE
+alias kgss="kubectl get statefulsets -n "$KUBE_NAMESPACE
 
 # describe
 alias kdp="kubectl describe pod -n "$KUBE_NAMESPACE
 alias kdd="kubectl describe deployment -n "$KUBE_NAMESPACE
 alias kds="kubectl describe service -n "$KUBE_NAMESPACE
 alias kdc="kubectl describe configmap -n "$KUBE_NAMESPACE
+alias kdss="kubectl describe statefulset -n "$KUBE_NAMESPACE
 
 # log
 alias kl="kubectl logs -n "$KUBE_NAMESPACE" --follow"
